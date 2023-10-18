@@ -1,0 +1,102 @@
+@font-face {
+  font-family: "Vazir";
+  src: url("../fonts/Vazir.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Vazir.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Vazir.woff2") format("woff2"),
+    url("../fonts/Vazir.woff") format("woff"),
+    url("../fonts/Vazir.ttf") format("truetype");
+  /* Safari, Android, iOS */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Vazir";
+  line-height: 1.6;
+  background: #fff;
+}
+
+img {
+  width: 100%;
+}
+a,
+i {
+  color: #000;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.theme {
+  color: #da0b4e;
+}
+
+.form-contact {
+  display: block;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  border: 1px solid #e6eaf3;
+}
+
+.form-contact-header {
+  display: table;
+  width: 100%;
+  padding: 0.7rem 1rem 0.7rem 2rem;
+  border-bottom: 1px solid #e7eff9;
+  font-size: 18px;
+}
+
+.form-contact-body {
+  line-height: 1.7;
+  padding: 1rem 2rem;
+  display: inline-block;
+  width: 100%;
+}
+
+.form-control {
+  background: #f2f3f5;
+  border-color: #f2f3f5;
+  border-radius: 4px;
+}
+
+.form-group input,
+.form-group textarea {
+  box-shadow: none !important;
+}
+.form-control:focus {
+  border-color: #e6eaf3;
+  background: #f2f3f5;
+}
+
+.contact-info {
+  margin-right: 1rem;
+}
+.contact-info h2 {
+  line-height: 36px;
+  font-size: 20px;
+}
+
+.contact-info-detail {
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.contact-info-icon {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  font-size: 35px;
+  margin-left: 5px;
+}
+
+.contact-info-title {
+  font-size: 15px;
+  margin-bottom: 2px;
+}
