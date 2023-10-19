@@ -33,12 +33,72 @@ a {
 .card {
   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
     rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  transform: all 0.5s;
+  overflow: hidden;
 }
+
 .card:hover {
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card .img-mask {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 0;
+  pointer-events: none;
+  z-index: 3;
+  background: linear-gradient(to top, #2f2727, transparent);
+  transition: all 0.15s;
+}
+
+.card:hover .img-mask {
+  height: 100%;
+}
+
+.card .image-badge {
+  position: absolute;
+  top: -32px;
+  left: 20px;
+  z-index: 4;
+  color: #fff;
+  background-color: #0eabef;
+  font-size: 12px;
+  padding: 6px 15px;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+
+.card:hover .image-badge {
+  top: 20px;
+}
+
+.card .image-time {
+  display: inline-block;
+  position: absolute;
+  left: -90px;
+  bottom: 10px;
+  z-index: 4;
+  font-size: 12px;
+  color: #939090;
+  transition: all 0.5s;
+}
+
+.card:hover .image-time {
+  left: 17px;
 }
 
 .card-body img {
   width: 30px;
   height: 30px;
+}
+
+.card-body p {
+  font-weight: 900;
+}
+
+.card-body .fa,
+.card-body span {
+  font-size: 11px;
 }
