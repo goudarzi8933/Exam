@@ -706,4 +706,16 @@ img {
   color: #a4a2a2;
   padding-top: 10px;
   padding-right: 15px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 600px;
+  }
+  #section-1 .items-box {
+    display: block;
+  }
+  #section-1 .items-box .single-item {
+    margin-bottom: 15px;
+  }
 }/*# sourceMappingURL=style.css.map */
