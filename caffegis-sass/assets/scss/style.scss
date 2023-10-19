@@ -1,0 +1,54 @@
+@import 'fonts';
+@import 'my_variables';
+@import 'reset';
+@import 'utilities';
+@import 'functions';
+
+
+#section {
+    &-1 {
+        .items-box {
+            margin-top: 3rem;
+            display: flex;
+            justify-content: center;
+            padding-right: 10px;
+
+            .single-item {
+                margin-left: 2rem;
+                padding-bottom: 2rem;
+                box-shadow: $box-shadow;
+
+                img {
+                    max-width: 100%;
+                }
+
+                h3 {
+                    padding-top: 5px;
+                    padding-right: 5px;
+                    font-size: 14px;
+                    height: 40px;
+                }
+                .single-item-body {
+                    display: flex;
+                    align-items: center;
+
+                    .teacher-img {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        margin-right: 10px;
+                        margin-top: 25px;
+                    }
+
+                    h4 {
+                        font-size: 10px;
+                        color: #a4a2a2;
+                        padding-top: 10px;
+                        padding-right: 15px;
+                    }
+
+                }
+            }
+        }
+    }
+}

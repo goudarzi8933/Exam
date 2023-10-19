@@ -1,0 +1,15 @@
+@mixin transition($property, $duration) {
+    transition: $property $duration;
+}
+
+@function calc_col($column_total_count, $column_count){
+    @return (100% /$column_total_count)*$column_count
+}
+
+$col_num: 12;
+
+@for $i from 1 through 5 {
+    .col-#{$i} {
+        width: calc_col(5, $i);
+    }
+}
